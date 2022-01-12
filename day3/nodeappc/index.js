@@ -1,0 +1,1 @@
+// instalar http-server de manera global y lanzarlo por consola con http-server nodeappc
