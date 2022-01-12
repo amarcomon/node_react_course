@@ -1,0 +1,18 @@
+<html>
+  <body>
+      <div id="diva">
+
+      </div>
+  </body>
+
+  <script>
+    const ws = new WebSocket("ws://localhost:8100");
+    ws.onopen = () => {
+      console.log("Socket client is connected!!!!!!!");
+      ws.send("Browser client");
+    };
+    ws.onmessage = (e) => {
+      console.log("the data received is,", e.data);
+    };
+  </script>
+</html>
